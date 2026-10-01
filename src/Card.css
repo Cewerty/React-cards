@@ -1,0 +1,93 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  max-width: min(1400px, 100%);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.card {
+  background-color: rgb(38, 38, 38);
+  /* Лучше разобраться в тенях */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(165 165 165 / 0.4);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  transition: padding 0.25s;
+}
+
+.card:hover {
+  padding: 24px
+}
+
+.card__banner {
+  margin-right: auto;
+  /*margin-left: auto;*/
+  /* height: 10px;
+  width: 18px; */
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid;
+}
+
+.card__banner--active {
+  background-color: #0d830d;
+  border-color: rgb(122 202 122 / 0.35);
+}
+
+.card__banner--inactive {
+  background-color: darkred;
+  border-color: rgb(158 54 54 / 0.35);
+}
+
+.card__banner--pending {
+  background-color: #646018;
+  border-color: rgb(188 186 113 / 0.35);
+}
+
+.card__banner--undefined {
+  background-color: rgb(38, 38, 38);
+  border-color: rgb(248 248 248 / 0.35);
+}
+
+.card__text {
+  color: #c6c6c6;
+  display: block;
+  margin: 1.0em;
+  text-align: left;
+}
+
+.card__head {
+  display: block;
+  margin: .25em;
+}
+
+.card__title {
+  color: white;
+  margin-top: 1.20rem;
+  text-align: left;
+  display: block;
+}
+
+.card__image {
+  object-fit:cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.card__footer {
+  display: block;
+  color: white;
+  margin-top: auto;
+  margin-left: auto;
+  text-align: right;
+}
