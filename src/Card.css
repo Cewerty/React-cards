@@ -17,11 +17,12 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  transition: padding 0.25s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  padding: 24px
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card__banner {
